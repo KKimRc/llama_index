@@ -17,6 +17,7 @@ from llama_index.llms.openai.utils import (
     GPT3_MODELS,
     GPT4_MODELS,
     TURBO_MODELS,
+    DEEPSEEK_MODELS,
 )
 
 if TYPE_CHECKING:
@@ -54,12 +55,14 @@ ALL_AVAILABLE_MODELS = {
     **GPT3_MODELS,
     **AZURE_TURBO_MODELS,
     **CLAUDE_MODELS,
+    **DEEPSEEK_MODELS,
 }
 
 CHAT_MODELS = {
     **GPT4_MODELS,
     **TURBO_MODELS,
     **AZURE_TURBO_MODELS,
+    **DEEPSEEK_MODELS,
 }
 
 

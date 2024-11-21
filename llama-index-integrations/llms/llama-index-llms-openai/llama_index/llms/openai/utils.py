@@ -65,6 +65,9 @@ GPT4_MODELS: Dict[str, int] = {
     # 0314 models
     "gpt-4-0314": 8192,
     "gpt-4-32k-0314": 32768,
+    # deepseek models
+    "deepseek-chat": 128000,
+    "deepseek-coder": 128000,
 }
 
 AZURE_TURBO_MODELS: Dict[str, int] = {
@@ -124,8 +127,6 @@ ALL_AVAILABLE_MODELS = {
     **GPT3_5_MODELS,
     **GPT3_MODELS,
     **AZURE_TURBO_MODELS,
-    # deepseek models
-    "deepseek-chat": 128000, #添加deepseek模型
 }
 
 CHAT_MODELS = {

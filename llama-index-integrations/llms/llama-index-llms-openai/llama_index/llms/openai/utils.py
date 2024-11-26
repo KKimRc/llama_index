@@ -118,6 +118,11 @@ GPT3_MODELS: Dict[str, int] = {
     "davinci": 2049,
 }
 
+DEEPSEEK_MODELS: Dict[str, int] = {
+    "deepseek-coder": 128000,
+    "deepseek-chat": 128000,
+}
+
 ALL_AVAILABLE_MODELS = {
     **O1_MODELS,
     **GPT4_MODELS,
@@ -125,6 +130,7 @@ ALL_AVAILABLE_MODELS = {
     **GPT3_5_MODELS,
     **GPT3_MODELS,
     **AZURE_TURBO_MODELS,
+    **DEEPSEEK_MODELS,
 }
 
 CHAT_MODELS = {
@@ -132,6 +138,7 @@ CHAT_MODELS = {
     **GPT4_MODELS,
     **TURBO_MODELS,
     **AZURE_TURBO_MODELS,
+    **DEEPSEEK_MODELS,
 }
 
 

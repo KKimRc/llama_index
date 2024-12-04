@@ -52,6 +52,7 @@ python = ">=3.9,<4.0"
 llama-index-legacy = "^0.9.48"
 llama-index-llms-openai = { path = "./llama-index-integrations/llms/llama-index-llms-openai", develop = false }
 llama-index-embeddings-openai = "^0.3.0"
+llama-index-embeddings-huggingface = { path = "./llama-index-integrations/embeddings/llama-index-embeddings-huggingface", develop = false }
 llama-index-program-openai = "^0.3.0"
 llama-index-question-gen-openai = "^0.3.0"
 llama-index-agent-openai = "^0.4.0"

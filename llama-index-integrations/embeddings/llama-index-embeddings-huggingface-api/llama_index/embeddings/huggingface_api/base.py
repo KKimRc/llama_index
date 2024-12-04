@@ -27,7 +27,7 @@ class HuggingFaceInferenceAPIEmbedding(BaseEmbedding):  # type: ignore[misc]
     Wrapper on the Hugging Face's Inference API for embeddings.
 
     Overview of the design:
-    - Uses the feature extraction task: https://huggingface.co/tasks/feature-extraction
+    - Uses the feature extraction task: https://hf-mirror.com/tasks/feature-extraction
     """
 
     pooling: Optional[Pooling] = Field(
@@ -120,7 +120,7 @@ class HuggingFaceInferenceAPIEmbedding(BaseEmbedding):  # type: ignore[misc]
 
         Args:
             task: Hugging Face task to check within. A list of all tasks can be
-                found here: https://huggingface.co/tasks
+                found here: https://hf-mirror.com/tasks
         """
         all_models = self._sync_client.list_deployed_models(frameworks="all")
         try:

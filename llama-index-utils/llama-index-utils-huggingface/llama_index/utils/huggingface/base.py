@@ -78,7 +78,7 @@ def format_text(
 
 def get_pooling_mode(model_name: Optional[str]) -> str:
     pooling_config_url = (
-        f"https://huggingface.co/{model_name}/raw/main/1_Pooling/config.json"
+        f"https://hf-mirror.com/{model_name}/raw/main/1_Pooling/config.json"
     )
 
     try:
